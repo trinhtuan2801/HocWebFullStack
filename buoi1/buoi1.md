@@ -30,7 +30,7 @@ apples[1] là reference type trỏ đến ô nhớ của macbooks[1]
 >*Kết quả:* undefined
 >
 >*Giải thích:* hoisting
-JS chuyển khai báo lên trên cùng của scope -> biến text trong function được khởi tạo với giá trị undefined -> text được in ra 'undefined' -> text được gán giá trị 'inside'
+- JS chuyển khai báo lên trên cùng của scope -> biến text trong function được khởi tạo với giá trị undefined -> text được in ra 'undefined' -> text được gán giá trị 'inside'
 
 ## Ex4
 ---
