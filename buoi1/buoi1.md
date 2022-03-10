@@ -34,6 +34,7 @@ JS chuyển khai báo lên trên cùng của scope -> biến text trong function
 
 ## Ex4
 ---
+```
 function inBetween(small, big)
 {
     return (value) => {return value >= small && value <=big}
@@ -43,6 +44,7 @@ function inArray(arr)
 {
     return (value) => {return arr.includes(value)}
 }
+```
 
 ## Ex5
 ---
