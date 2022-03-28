@@ -33,6 +33,7 @@ app.get('/course/random', (req, res)=>
 app.get('/even', (req, res)=>
 {
     let received_obj = req.query
+    //const {from, to} = req.query
     let min = Number(received_obj.from)
     let max = Number(received_obj.to)
     let arr = []
