@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import './App.css'
 import Dropdown from './Dropdown/Dropdown';
 import MyButton from './MyButton/MyButton';
@@ -26,7 +27,7 @@ function App() {
         {colors.map((color, index) => (
           <span
             key={index}
-            className={`Color-item ${index === 0 ? 'active' : ''}`}
+            className={clsx('Color-item', { 'active': index === 0 })}
             style={{ background: color }}
           />
         ))}
@@ -35,7 +36,7 @@ function App() {
         {tags.map((tag, index) => (
           <span
             key={index}
-            className={`Tag ${index === 0 ? 'active' : ''}`}
+            className={clsx('Tag', { 'active': index === 0 })}
           >
             {tag}
           </span>
@@ -44,13 +45,13 @@ function App() {
 
       <div style={{ marginTop: 30, backgroundColor: 'white', padding: '20px 0px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
         <MyButton
-          primary={false}
+          primary={true}
           label="MyButton"
-          backgroundColor="#6495ED"
-          size="large"
+          backgroundColor="cornflowerblue"
+          size="medium"
         />
 
-        <div style={{ marginTop: 20}}></div>
+        <div style={{ marginTop: 20 }}></div>
 
         <Dropdown
           options={['Profile', 'Settings', 'Logout']}
